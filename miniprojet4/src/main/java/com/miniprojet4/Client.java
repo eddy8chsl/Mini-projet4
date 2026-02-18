@@ -16,6 +16,7 @@ public class Client {
             String reponse = (String) jeu.receive();
             if (reponse.startsWith("ERROR")) {
                 System.out.println("Aucun serveur disponible.");
+                sc.close();
                 return;
             }
 
@@ -81,6 +82,7 @@ public class Client {
                     }
                 }
             }
+            sc.close();
             jeu.close();
         } catch (Exception e) {
             e.printStackTrace();
