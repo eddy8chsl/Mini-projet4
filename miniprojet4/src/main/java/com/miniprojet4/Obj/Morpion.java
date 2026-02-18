@@ -3,7 +3,13 @@ package com.miniprojet4.Obj;
 public class Morpion {
 
     public enum Cellule {
-        VIDE, X, O
+        VIDE {
+            @Override
+            public String toString() {
+                return "#";
+            }
+        },
+         X, O
     }
 
     private Cellule[] grille = new Cellule[9];
@@ -39,7 +45,7 @@ public class Morpion {
         return true;
     }
 
-    private boolean verifierGagnant(Cellule joueur) {
+    public boolean verifierGagnant(Cellule joueur) {
         int[][] lignes = { { 0, 1, 2 }, { 3, 4, 5 }, { 6, 7, 8 }, { 0, 3, 6 }, { 1, 4, 7 }, { 2, 5, 8 }, { 0, 4, 8 },
                 { 2, 4, 6 } };
         for (int[] ligne : lignes) {
