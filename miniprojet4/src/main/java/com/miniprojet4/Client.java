@@ -10,7 +10,7 @@ public class Client {
     public static void main(String[] args) {
         try {
             Scanner sc = new Scanner(System.in);
-            ClientTCP jeu = new ClientTCP("127.0.0.1", 56263);
+            ClientTCP jeu = new ClientTCP("127.0.0.1", 5100);
            
             jeu.send("START");
             String reponse = (String) jeu.receive();

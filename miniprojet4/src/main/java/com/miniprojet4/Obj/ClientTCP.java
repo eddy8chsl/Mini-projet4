@@ -25,8 +25,11 @@ public class ClientTCP {
     }
 
     public void close() throws Exception {
-        if (input != null) input.close();
-        if (output != null) output.close();
-        if (socket != null) socket.close();
+        if (input != null)
+            input.close();
+        if (output != null)
+            output.close();
+        if (socket != null)
+            socket.close();
     }
 }
