@@ -25,6 +25,10 @@ Pour ce mini-projet 4, nous avons développé une version multijoueur du jeu **M
 - Client -> Eddy
 - Objet Morpion -> Alisa
 
+## Graphe Du projet
+
+![graphe](/miniprojet4/src/main/resources/img/graphe.png "Graphe du mini projet 4")
+
 ## Client[56263]
 
 - Deux utilisateurs U1 et U2 se connectent au client C afin de jouer au jeu « Morpion ».
