@@ -19,6 +19,11 @@ public class Client {
                 return;
             }
 
+            System.out.println("------------------------------------");
+            System.out.println("Bienvenue dans le jeu de Morpion !");
+            System.out.println("------------------------------------");
+            System.out.println("User 1 : X | User 2 : O");
+
             JSONObject grilleJson = new JSONObject(reponse);
             System.out.println(grilleJson.getString("grille"));
            
@@ -26,10 +31,11 @@ public class Client {
             boolean fini = false;
             int essai = 1;
             int user = 1;
+            String symbole = "X";
             System.out.println("Instructions : Envoyez un chiffre de 1 à 9 pour sélectionner une case (1 = haut-gauche, 2 = haut-milieu, etc.).");
             
             while (!fini) {
-                System.out.print("User " + user + " > ");
+                System.out.print("User " + user + " ("+ symbole + ") > ");
                 String proposition = sc.nextLine();
 
                 try {
@@ -66,9 +72,11 @@ public class Client {
                         System.out.println("Round " + essai);
                         essai++;
                         if (user == 1) {
+                            symbole = "O";
                             user = 2;
                         } else {
                             user = 1;
+                            symbole = "X";
                         }
                     }
                 }
