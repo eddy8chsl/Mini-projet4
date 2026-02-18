@@ -58,4 +58,14 @@ public class Morpion {
         }
     }
 
+    public String afficherGrilleString() {
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < 9; i++) {
+            sb.append(grille[i]).append(" ");
+            if (i % 3 == 2)
+                sb.append("\n");
+        }
+        return sb.toString();
+    }
+
 }
