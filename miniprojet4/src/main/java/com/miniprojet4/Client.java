@@ -1,10 +1,10 @@
 package com.miniprojet4;
 
-import com.miniprojet4.Obj.ClientTCP;
-import com.miniprojet4.Obj.Morpion;
 import java.util.Scanner;
 
 import org.json.JSONObject;
+
+import com.miniprojet4.Obj.ClientTCP;
 
 public class Client {
     public static void main(String[] args) {
