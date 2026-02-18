@@ -22,14 +22,14 @@ Pour ce mini-projet 4, nous avons développé une version multijoueur du jeu **M
 * Client -> Eddy
 * Objet Morpion -> Alisa
 
-# Client[56263]
+## Client[56263]
 
 * Deux utilisateurs U1 et U2 se connectent au client C afin de jouer au jeu « Morpion ».
 * Chaque joueur envoie un chiffre compris entre 1 et 9, correspondant à la position d’une case dans la grille.
 * Un joueur gagne s’il aligne trois symboles identiques (X ou O) verticalement, horizontalement ou en diagonale.
 * Si toutes les cases de la grille sont occupées sans qu’aucun joueur n’ait réalisé d’alignement, la partie se termine par une égalité.
 
-# ServeurJeu[56263] (Morpion)
+## ServeurJeu[56263] (Morpion)
 
 * Connexion au client afin d’initialiser la grille du jeu « Morpion ».
 * Le serveur attribue le rôle de joueur 1 ou joueur 2 en fonction du tour.
@@ -57,7 +57,7 @@ Deux joueurs s'affrontent sur une grille de 3×3 :
 7 | 8 | 9
 ```
 
-~Remplacer par des "#"~
+*Remplacer par des "#" dans le jeu*
 
 ---
 
