@@ -44,7 +44,8 @@ Pour ce mini-projet 4, nous avons développé une version multijoueur du jeu **M
 
 ## Middleware[5100]
 
-- Connection entre le Client et Serveur
+- Assure la connexion et la communication entre le client et le serveur de jeu.
+- Joue le rôle d’intermédiaire en transmettant les données échangées (coups des joueurs, état de la grille, messages de victoire ou d’égalité).
 
 ## Règles du Jeu
 
